@@ -63,6 +63,7 @@ public class GeneradorAlias {
      * @return Alias generado con el formato: InicialNombre + InicialApellido + "_" + Ciclo
      */
     public String generarAlias() {
+
         String nombreSinEspacios = this.nombreCompleto.trim(); // Elimina espacios al inicio y final
         String cicloSinEspacios = this.ciclo.trim().toUpperCase(); // Limpia y convierte ciclo a mayúsculas
 
