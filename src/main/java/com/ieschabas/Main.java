@@ -28,7 +28,7 @@ public class Main {
         GeneradorAlias generador = new GeneradorAlias(nombre, ciclo);
 
         // Mostrar resultados
-        System.out.println("--- Resultados ---");
+        System.out.println("--- RESULTADO ---");
         System.out.println("Alias generado: " + generador.generarAlias());
         System.out.println("Código numérico: " + generador.generarCodigoNumerico());
 
@@ -37,7 +37,7 @@ public class Main {
         /**
          * Actividad 2: Calculadora de Texto
          */
-        System.out.println("=== Act 2: Calculadora de Texto ===");
+        System.out.println("\n=== Act 2: Calculadora de Texto ===");
 
         // Pedir expresión al usuario (usando el mismo Scanner).
         System.out.print("Introduce una expresión (ej. 5+3): ");
@@ -47,14 +47,14 @@ public class Main {
         CalculadoraTexto calc = new CalculadoraTexto(expr);
 
         // Mostrar resultado.
-        System.out.println("--- RESULTADO ---");
+        System.out.println("---RESULTADO ---");
         System.out.println(calc.generarResumen());
 
         /**
          * Actividad 3: Formateador de factura.
          */
 
-        System.out.println("=== Actividad 3: Formateador de Factura ===");
+        System.out.println("\n=== Actividad 3: Formateador de Factura ===");
 
         // Pedir datos al usuario.
         System.out.print("Introduce el nombre del producto: ");
@@ -75,11 +75,33 @@ public class Main {
 
 
         /**
+         * Actividad 4: Ficha personal.
+         */
+        lector.nextLine();
+        System.out.println("\n=== Actividad 4: Ficha Personal ===");
+
+        //Pedir datos al usuario.
+        System.out.println("Introduce los datos en el formato:");
+        System.out.println("\"Nombre Apellido - YYYY-MM-DD - Ciudad\"");
+        System.out.print("Ejemplo: Ana López - 2005-03-15 - Madrid\n→ ");
+
+        String entrada = lector.nextLine(); // Lee toda la línea escrita por el usuario
+
+        //Crear objeto con los datos introducidos.
+        FichaPersonal ficha = new FichaPersonal(entrada);
+
+        // Mostrar los datos formateados de la ficha
+        System.out.println("--- FICHA PERSONAL ---");
+        System.out.println(ficha.generarEtiqueta());
+
+
+
+        /**
          * Actividad 5: Normalizador de registro.
          */
-        lector.nextLine(); // // Limpia el salto de línea pendiente porque antes se usó nextDouble() y deja un Enter sin leer.
 
-        System.out.println("=== Actividad 5: Normalizador de Registro ===");
+
+        System.out.println("\n=== Actividad 5: Normalizador de Registro ===");
 
         System.out.print("Introduce tu nombre de usuario: "); // Lee el nombre de usuario completo
         String usuario = lector.nextLine();
@@ -94,7 +116,7 @@ public class Main {
         NormalizadorRegistro normalizador = new NormalizadorRegistro(usuario, correo, telefono);
 
         // Muestra el resumen formateado con usuario, correo y teléfono normalizados
-        System.out.println("\n--- RESULTADO ---");
+        System.out.println("--- RESULTADO ---");
         System.out.println(normalizador.generarResumen());
 
     }
