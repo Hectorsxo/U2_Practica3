@@ -1,4 +1,4 @@
-package org.example;
+package com.ieschabas;
 
 /**
  * Programa que recibe el nombre de un producto, su precio base y el porcentaje de IVA.

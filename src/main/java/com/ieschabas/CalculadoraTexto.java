@@ -1,4 +1,4 @@
-package org.example;
+package com.ieschabas;
 
 /**
  * Programa que recibe una expresión escrita en el formato "n1+n2" y realiza operaciones aritméticas.

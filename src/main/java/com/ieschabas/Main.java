@@ -1,8 +1,5 @@
 package com.ieschabas;
 
-import org.example.CalculadoraTexto;
-import org.example.FormateadorFactura;
-
 import java.util.Scanner;
 /**
  * Práctica 3 Unidad 2
@@ -21,13 +18,13 @@ public class Main {
          */
         System.out.println("=== Act 1: Generador de Alias Académico ===");
 
-        // Pedir nombre y ciclo al usuario
+        // Pedir nombre y ciclo al usuario.
         System.out.print("Introduce tu nombre completo: ");
         String nombre = lector.nextLine();
         System.out.print("Introduce tu ciclo formativo: ");
         String ciclo = lector.nextLine();
 
-        // Crear objeto de la clase GeneradorAlias
+        // Crear objeto de la clase GeneradorAlias.
         GeneradorAlias generador = new GeneradorAlias(nombre, ciclo);
 
         // Mostrar resultados
@@ -35,22 +32,22 @@ public class Main {
         System.out.println("Alias generado: " + generador.generarAlias());
         System.out.println("Código numérico: " + generador.generarCodigoNumerico());
 
-        System.out.println(); // Línea en blanco para separar actividades
+        System.out.println(); // Línea en blanco para separar actividades.
 
         /**
          * Actividad 2: Calculadora de Texto
          */
         System.out.println("=== Act 2: Calculadora de Texto ===");
 
-        // Pedir expresión al usuario (usando el mismo Scanner)
+        // Pedir expresión al usuario (usando el mismo Scanner).
         System.out.print("Introduce una expresión (ej. 5+3): ");
         String expr = lector.nextLine();
 
-        // Crear objeto de la clase CalculadoraTexto
+        // Crear objeto de la clase CalculadoraTexto.
         CalculadoraTexto calc = new CalculadoraTexto(expr);
 
-        // Mostrar resultado
-        System.out.println("--- Resultado ---");
+        // Mostrar resultado.
+        System.out.println("--- RESULTADO ---");
         System.out.println(calc.generarResumen());
 
         /**
@@ -59,7 +56,7 @@ public class Main {
 
         System.out.println("=== Actividad 3: Formateador de Factura ===");
 
-        // Pedir datos al usuario
+        // Pedir datos al usuario.
         System.out.print("Introduce el nombre del producto: ");
         String nombre1 = lector.nextLine();
 
@@ -69,11 +66,36 @@ public class Main {
         System.out.print("Introduce el porcentaje de IVA (ej. 21): ");
         double iva = lector.nextDouble();
 
-        // Crear objeto (según Unidad 2: instanciación con new)
+        // Crear objeto (según Unidad 2: instanciación con new).
         FormateadorFactura factura = new FormateadorFactura(nombre1, precio, iva);
 
-        // Mostrar el ticket
+        // Mostrar el ticket.
         System.out.println("--- TICKET ---");
         System.out.println(factura.generarTicket());
+
+
+        /**
+         * Actividad 5: Normalizador de registro.
+         */
+        lector.nextLine(); // // Limpia el salto de línea pendiente porque antes se usó nextDouble() y deja un Enter sin leer.
+
+        System.out.println("=== Actividad 5: Normalizador de Registro ===");
+
+        System.out.print("Introduce tu nombre de usuario: "); // Lee el nombre de usuario completo
+        String usuario = lector.nextLine();
+
+        System.out.print("Introduce tu correo electrónico: "); // Lee el correo escrito por el usuario
+        String correo = lector.nextLine();
+
+        System.out.print("Introduce tu número de teléfono: "); // Lee el número de teléfono como texto
+        String telefono = lector.nextLine();
+
+        // Crea un objeto de la clase NormalizadorRegistro con los datos introducidos
+        NormalizadorRegistro normalizador = new NormalizadorRegistro(usuario, correo, telefono);
+
+        // Muestra el resumen formateado con usuario, correo y teléfono normalizados
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println(normalizador.generarResumen());
+
     }
 }
