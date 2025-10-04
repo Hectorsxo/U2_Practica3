@@ -36,6 +36,7 @@ public class FormateadorFactura {
     }
 
     /**
+     * getter
      * @return Devuelve el nombre del producto.
      */
     public String getNombreProducto() {
@@ -43,6 +44,7 @@ public class FormateadorFactura {
     }
 
     /**
+     * getter
      * @return Devuelve el precio base.
      */
     public double getPrecioBase() {
@@ -50,6 +52,7 @@ public class FormateadorFactura {
     }
 
     /**
+     * getter
      * @return Devuelve el porcentaje de IVA.
      */
     public double getPorcentajeIva() {
@@ -57,6 +60,7 @@ public class FormateadorFactura {
     }
 
     /**
+     * setter
      * @param nombreProducto Asigna un nuevo nombre al producto.
      */
     public void setNombreProducto(String nombreProducto) {
@@ -64,6 +68,7 @@ public class FormateadorFactura {
     }
 
     /**
+     * setter
      * @param precioBase Asigna un nuevo precio base.
      */
     public void setPrecioBase(double precioBase) {
@@ -71,6 +76,7 @@ public class FormateadorFactura {
     }
 
     /**
+     * setter
      * @param porcentajeIva Adigna un nuevo porcentaje en IVA.
      */
 

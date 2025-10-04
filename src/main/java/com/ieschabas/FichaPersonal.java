@@ -49,6 +49,7 @@ public class FichaPersonal {
     }
 
     /**
+     * getter
      * @return Nombre de la persona.
      */
     public String getNombre() {
@@ -56,6 +57,7 @@ public class FichaPersonal {
     }
 
     /**
+     * getter
      * @return Apellido de la persona.
      */
     public String getApellido() {
@@ -63,6 +65,7 @@ public class FichaPersonal {
     }
 
     /**
+     * getter
      * @return Fecha de nacimiento en formato "YYYY-MM-DD".
      */
     public String getFechaNacimiento() {
@@ -70,6 +73,7 @@ public class FichaPersonal {
     }
 
     /**
+     * getter
      * @return Ciudad de residencia.
      */
     public String getCiudad() {

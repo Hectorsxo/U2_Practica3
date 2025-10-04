@@ -31,6 +31,7 @@ public class GeneradorAlias {
     }
 
     /**
+     * getter
      * @return Devuelve el nombre completo del estudiante.
      */
     public String getNombreCompleto() {
@@ -38,6 +39,7 @@ public class GeneradorAlias {
     }
 
     /**
+     * getter
      * @param nombreCompleto Asigna un nuevo nombre.
      */
     public void setNombreCompleto(String nombreCompleto) {
@@ -45,6 +47,7 @@ public class GeneradorAlias {
     }
 
     /**
+     * getter
      * @return Devuelve el ciclo académico del estudiante.
      */
     public String getCiclo() {
@@ -52,6 +55,7 @@ public class GeneradorAlias {
     }
 
     /**
+     * setter
      * @param ciclo Asigna un nuevo ciclo.
      */
     public void setCiclo(String ciclo) {

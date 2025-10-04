@@ -6,10 +6,21 @@ import java.util.Scanner;
  * @author Héctor Crespo
  * @version 1.0
  */
-import java.util.Scanner;
-
 public class Main {
+    /**
+     * Constructor por defecto de Main.
+     */
+    public Main(){
+
+    }
+    /**
+     * Método principal que actúa como punto de entrada del programa.
+     * @param args argumentos.
+     */
     public static void main(String[] args) {
+
+
+
         // Un único Scanner para todo el programa
         Scanner lector = new Scanner(System.in);
 

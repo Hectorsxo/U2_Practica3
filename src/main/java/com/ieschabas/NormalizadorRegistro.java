@@ -38,6 +38,7 @@ public class NormalizadorRegistro {
 
 
     /**
+     * getter
      * @return Devuelve el usuario.
      */
     public String getUsuario() {
@@ -45,6 +46,7 @@ public class NormalizadorRegistro {
     }
 
     /**
+     * getter
      * @return Devuelve el correo electrónico.
      */
     public String getCorreo() {
@@ -52,6 +54,7 @@ public class NormalizadorRegistro {
     }
 
     /**
+     * getter
      * @return Devuelve el número de teléfono.
      */
     public String getTelefono() {
@@ -59,6 +62,7 @@ public class NormalizadorRegistro {
     }
 
     /**
+     * setter
      * @param usuario Asigna un nuevo usuario.
      */
     public void setUsuario(String usuario) {
@@ -66,6 +70,7 @@ public class NormalizadorRegistro {
     }
 
     /**
+     * setter
      * @param correo Asigna un nuevo correo electrónico.
      */
     public void setCorreo(String correo) {
@@ -73,6 +78,7 @@ public class NormalizadorRegistro {
     }
 
     /**
+     * setter
      * @param telefono Asigna un nuevo número de teléfono.
      */
     public void setTelefono(String telefono) {
