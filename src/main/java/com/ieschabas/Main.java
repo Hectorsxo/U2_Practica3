@@ -20,7 +20,6 @@ public class Main {
     public static void main(String[] args) {
 
 
-
         // Un único Scanner para todo el programa
         Scanner lector = new Scanner(System.in);
 
@@ -32,7 +31,7 @@ public class Main {
         // Pedir nombre y ciclo al usuario.
         System.out.print("Introduce tu nombre completo: ");
         String nombre = lector.nextLine();
-        System.out.print("Introduce tu ciclo formativo: ");
+        System.out.print("Introduce tu ciclo formativo(ej. DAM): ");
         String ciclo = lector.nextLine();
 
         // Crear objeto de la clase GeneradorAlias.
@@ -70,6 +69,8 @@ public class Main {
         // Pedir datos al usuario.
         System.out.print("Introduce el nombre del producto: ");
         String nombre1 = lector.nextLine();
+        nombre1 = nombre1.trim(); // Modifica la variable para eliminar espacios
+
 
         System.out.print("Introduce el precio base (ej. 12,50): ");
         double precio = lector.nextDouble();
@@ -117,10 +118,10 @@ public class Main {
         System.out.print("Introduce tu nombre de usuario: "); // Lee el nombre de usuario completo
         String usuario = lector.nextLine();
 
-        System.out.print("Introduce tu correo electrónico: "); // Lee el correo escrito por el usuario
+        System.out.print("Introduce tu correo electrónico (ej. agarrido@gmail.com): "); // Lee el correo escrito por el usuario
         String correo = lector.nextLine();
 
-        System.out.print("Introduce tu número de teléfono: "); // Lee el número de teléfono como texto
+        System.out.print("Introduce tu número de teléfono (ej. +34 610 29 77 86): "); // Lee el número de teléfono como texto
         String telefono = lector.nextLine();
 
         // Crea un objeto de la clase NormalizadorRegistro con los datos introducidos

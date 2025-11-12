@@ -110,7 +110,19 @@ public class NormalizadorRegistro {
      * @return Correo formateado.
      */
     public String formatearCorreo() {
-        return correo.trim().toLowerCase();
+        String correoLimpio = correo.trim().toLowerCase();
+        if (!correoLimpio.contains("@")) {
+            return "El correo no se ha registrado, formato inválido";
+        }
+        String[] partes = correoLimpio.split("@");
+        if (partes.length != 2 || partes[1].isEmpty()) {
+            return "El correo no se ha registrado, formato inválido";
+        }
+        String dominio = partes[1];
+        if (!dominio.contains(".") || dominio.startsWith(".") || dominio.endsWith(".")) {
+            return "El correo no se ha registrado, formato inválido";
+        }
+        return correoLimpio;
     }
 
     /**
